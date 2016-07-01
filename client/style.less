@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   min-height: 100%;
   background-color: @seagreen;
@@ -54,11 +54,40 @@ h1 {
   font-size: 1.5em;
   margin: 0;
   margin-bottom: 10px;
-  display: inline-block;
-  margin-right: 1em;
+  display: block;
+	position: relative;
+	text-align: center;
+
+}
+h2 {
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: block;
+	position: relative;
+	text-align: center;
 }
 
+.about-beacon{
+	h2{
+		color: @seagreen;
+	}
+}
 
+.update-beacon{
+
+	span{
+			margin: 0 auto;
+			text-align: center;
+			display: block;
+	}
+
+	p{
+		margin-top: 10px;
+		color: #434343;
+		font-size: 0.5em;
+	}
+}
 
  // ===========================
 
@@ -188,7 +217,7 @@ form {
 		max-width: 500px;
 		width: 100%;
 		.outline-focus;
-		font-size: 80%;
+		font-size: 70%;
 		color: darken(darkgrey,40%);
 	}
 	button{

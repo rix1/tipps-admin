@@ -1,20 +1,28 @@
 <template name="task">
     <div class="beacon">
+      <div class="about-beacon">
+        <h2>{{name}}</h2>
+      </div>
         <form class="update-beacon">
             <input type="hidden" name="id" value="{{_id}}">
+
             <span>
+                <p>Hvem tippser?</p>
                 <input type="text" class="" name="title" placeholder="{{title}}"/>
+                <p>Hva er tippset?</p>
                 <input type="text" class="" name="message" placeholder="{{message}}"/>
-            </span>
-            <br>
             <!-- <span>
                 <label for="cheap">Sparemodus</label>
                 <input id="cheap" class="text-black" type="radio" name="type" checked="checked" value="1">
                 <label for="big">Big Spender</label>
                 <input id="big" class="text-black" type="radio" name="type" value="2">
             </span> -->
-            <input type="number" name="price" placeholder="{{price}}">
+              <p>Hvor mye koster tippset?</p>
+              <input type="number" name="price" placeholder="{{price}}">
+            <br>
             <button type="submit">Lagre Tipps</button>
+            </span>
+
         </form>
     </div>
 
