@@ -32,16 +32,16 @@ Template.task.events({
     // const target = event.target;
     // const text = target.text.value;
 
-    console.log("Form submitted");
-
-    console.log(event.target);
-
-    console.log(event.target.id.value);
-    console.log(event.target.title.value);
-    console.log(event.target.title.placeholder);
-    console.log(event.target.message.value);
-    console.log(event.target.type.value);
-    console.log(event.target.price.value);
+    // console.log("Form submitted");
+    //
+    // console.log(event.target);
+    //
+    // console.log(event.target.id.value);
+    // console.log(event.target.title.value);
+    // console.log(event.target.title.placeholder);
+    // console.log(event.target.message.value);
+    // // console.log(event.target.type.value);
+    // console.log(event.target.price.value);
 
     let ev = event.target;
 
@@ -49,7 +49,7 @@ Template.task.events({
         id: event.target.id.value,
         title: (ev.title.value.length > 0) ? ev.title.value: ev.title.placeholder,
         message: (ev.message.value.length > 0) ? ev.message.value: ev.message.placeholder,
-        type: ev.type.value,
+        type: 0,
         price: (ev.price.value.length > 0) ? ev.price.value : ev.price.placeholder
     }
 
