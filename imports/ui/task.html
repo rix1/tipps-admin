@@ -1,19 +1,21 @@
 <template name="task">
-  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
-    <button class="delete">&times;</button>
+    <div class="beacon">
+        <form class="update-beacon">
+            <input type="hidden" name="id" value="{{_id}}">
+            <span>
+                <input type="text" class="" name="title" placeholder="{{title}}"/>
+                <input type="text" class="" name="message" placeholder="{{message}}"/>
+            </span>
+            <br>
+            <span>
+                <label for="cheap">Sparemodus</label>
+                <input id="cheap" class="text-black" type="radio" name="type" checked="checked" value="1">
+                <label for="big">Big Spender</label>
+                <input id="big" class="text-black" type="radio" name="type" value="2">
+            </span>
+            <input type="number" name="price" placeholder="{{price}}">
+            <button type="submit">Lagre Tipps</button>
+        </form>
+    </div>
 
-    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
-
-    {{#if isOwner}}
-      <button class="toggle-private">
-        {{#if private}}
-          Private
-        {{else}}
-          Public
-        {{/if}}
-      </button>
-    {{/if}}
-
-    <span class="text"><strong>{{username}}</strong> - {{text}}</span>
-  </li>
 </template>
