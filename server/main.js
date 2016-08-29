@@ -8,27 +8,16 @@ Meteor.startup(() => {
 
     if(Beacons.find().count() === 0){
         let beacons = [{
-            name: "BLUEBERRY",
+            name: "DNB 3",
             inserted: Date.now(),
-            macAddress: "C3:59:25:1E:CF:B0",
-            proximityUUID: "b9407f30-f5f8-466e-aff9-25556b57fe6d",
-            major: 53168,
-            minor: 9502,
-            title: "Tipps fra Heisen!",
+            macAddress: "EB:93:86:03:ED:D5",
+            proximityUUID: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+            major: 58865,
+            minor: 34307,
+            title: "Tipps fra Rikard!",
             message: "Se dagens meny!",
-			type: 0,
+            type: 0,
             price: -1
-        }, {
-            name: "BLUE",
-            inserted: Date.now(),
-            macAddress: "EC:81:4D:A1:7E:26",
-            proximityUUID: "b9407f30-f5f8-466e-aff9-25556b57fe6d",
-            major: 32294,
-            minor: 19873,
-            title: "Tipps fra Børsbaren!",
-            message: "Kjøp lommebok og få penger på kjøpet",
-			type: 0,
-            price: 1
         }];
 
         for (var i = 0; i < beacons.length; i++) {
@@ -36,3 +25,4 @@ Meteor.startup(() => {
         }
     }
 });
+
