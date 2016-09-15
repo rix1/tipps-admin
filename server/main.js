@@ -10,13 +10,13 @@ Meteor.startup(() => {
         let beacons = [{
             name: "DNB 3",
             inserted: Date.now(),
-            macAddress: "eb:93:86:03:ed:d5",
+            macAddress: "EB:93:86:03:ED:D5",
             proximityUUID: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
             major: 58865,
             minor: 34307,
             title: "Tipps fra Rikard!",
             message: "Se dagens meny!",
-			      type: 0,
+            type: 0,
             price: -1
         }];
 
@@ -25,3 +25,4 @@ Meteor.startup(() => {
         }
     }
 });
+
